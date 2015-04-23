@@ -1,4 +1,3 @@
-
 require './server'
 require 'capybara'
 require 'data_mapper'
@@ -27,6 +26,8 @@ ENV['RACK_ENV'] = 'test'
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
+
+  config.include Capybara::DSL
 
   config.before(:suite) do
     DatabaseCleaner.strategy = :transaction

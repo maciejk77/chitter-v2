@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
-group :test do
+# group :test do
   gem 'rspec'
   gem 'capybara'
-end
+# end
 
 gem 'data_mapper'
 gem 'dm-postgres-adapter'
